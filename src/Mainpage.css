@@ -1,0 +1,169 @@
+#mainpage{
+	position: absolute;
+	right: 0%;
+	margin: 0px 3%;
+	width: 75%;
+	/*top: 42%;*/
+	opacity: 0;
+	transform: translate(0%,50%);
+	transition: 2s all ease-out;
+	/*display: none;*/
+}
+
+.head-main{
+	position: relative;
+	font-size: 36px;
+	color: white;
+	line-height: 54px;
+	font-weight: 400;
+}
+
+.head-bold{
+	font-weight: 700;
+}
+
+.head-amount{
+	position: absolute;
+	right: 0px;
+	top: 15px;
+	color: rgba(193, 255, 213, 0.5);
+	font-size: 16px;
+}
+
+.tvl-amount{
+	font-weight: 600;
+	color: rgba(193, 255, 213, 1);
+}
+
+.audit{
+	position: relative;
+	margin: 20px 0px;
+	width: 100%;
+	border: 2px solid rgba(193, 255, 213, 0.2);
+	border-radius: 10px;
+	height: 66px;
+	box-sizing: border-box;
+	background:  rgba(34, 95, 70 ,0.25);
+	color: rgba(193, 255, 213, 1);
+}
+
+.audit > div{
+	display: inline-block;
+}
+
+/*.chat-icon-box{
+	width: 100%;
+	border: 2px solid rgba(193, 255, 213, 0.5);
+	border-radius: 5px;
+	height: 66px;
+	box-sizing: border-box;
+}
+*/
+.chat-icon{
+	border-radius: 10px 0px 0px 10px;
+	height: 20px;
+	width: 20px;
+	padding: 22px;
+	border-right: 2px solid rgba(193, 255, 213, 0.1);
+	background:  rgba(34, 95, 70 ,0.5);
+}
+
+.audit-text{
+	position: absolute;
+	width: 75%;
+	padding: 8px;
+}
+
+#cross-icon{
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
+.deposit-box{
+	position: relative;
+	display: inline-block;
+	width: 31%;
+	height: 110px;
+	border: 2px solid rgba(193, 255, 213, 0.1);
+	background: rgba(34, 95, 70 ,0.5);
+	box-sizing: border-box;
+	padding: 25px 30px;
+	border-radius: 10px;
+}
+
+.deposit-head{
+	font-size: 14px;
+	color: rgba(193, 255, 213, 1);
+}
+
+#show-icon{
+	padding: 0px 10px;
+	top: 2px;
+	position: relative;
+}
+
+.deposit{
+	font-size: 18px;
+	color: rgba(193, 255, 213, 1);
+}
+
+.deposit-amount{
+	font-size: 28px;
+	font-weight: 600;
+	padding: 0px 10px;
+	color: white;
+}
+
+.utopia-pending{
+	position: relative;
+	display: inline-block;
+	width: 67%;
+	height: 110px;
+	margin-left: 2%;
+	border: 2px solid rgba(193, 255, 213, 0.1);
+	background: rgba(34, 95, 70 ,0.5);
+	box-sizing: border-box;
+	padding: 25px 30px;
+	border-radius: 10px;
+}
+
+#harvest-btn{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translate(0%,-50%);
+	width: 131px;
+	height: 41px;
+	font-size: 14px;
+	font-weight: 600;
+	color: rgba(193, 255, 213, 1);
+	background: transparent;
+	border-radius: 5px;
+	border: 2px solid rgba(193, 255, 213, 0.1);
+}
+
+.utopia-pending-2{
+	position: relative;
+}
+
+.plutopia-icon1{
+	position: relative;
+	top: 2px;
+}
+
+#deposit-info-box{
+	display: inline-flex;
+	width: 100%;
+}
+
+.pending-dollars{
+	position: relative;
+	top: -2px;
+	font-size: 16px;
+	color: rgba(193, 255, 213, 1);
+	padding: 4px 6px;
+	border-radius: 5px;
+	border: 1px solid rgba(117, 240, 196, 0.1);
+}
+

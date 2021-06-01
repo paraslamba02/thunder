@@ -1,0 +1,24 @@
+#vbox1{
+	display: inline-block;
+	height: 200px;
+	width: 440px;
+	margin: 20px 20px 20px 0px;
+	box-sizing: border-box;
+	background-color: rgba(8,15,14,0.69);
+	border-radius: 10px;
+}
+
+#vbox1-h{
+	font-weight: 500;
+	font-size: 18px;
+	width: 100%;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#vbox-date{
+	font-weight: 300;
+	color: #C1FFD5;
+	margin: 0px 12px;
+}
