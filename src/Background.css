@@ -15,6 +15,7 @@
 	position: absolute;
 	transform: translate(0%, -50%);
 	transition: 1s all ease-in-out;
+	width: 100%;
 }
 
 #bckimg > img{

@@ -15,7 +15,7 @@
 	display: inline-block;
 }
 
-#ptopia-box-overlay{
+.ptopia-box-overlay{
 	position: absolute;
 	background: rgba(0, 0, 0, 0.5);
 	width: 95%;
@@ -23,7 +23,7 @@
 	border-radius: 10px;
 	border: 2px solid rgba(117, 240, 196, 0.1);
 	z-index: -1;
-	transition: 0.3s all ease-out;
+	transition: 1s all ease-out;
 }
 
 .colored-rect{
@@ -37,11 +37,11 @@
 
 #get-topia-btn{
 	position: absolute;
-	right: 20px;
-    top: 35px;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
+	right: 0px;
+	top: 30%;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
 }
 
 .group40{
@@ -283,7 +283,11 @@
 }
 
 .ptopia-show{
-	display: none;
+	opacity: 0;
+	transition: 1s all ease-out;
+	transform-origin: top;
+	max-height: 0px;
+	overflow: hidden;
 }
 
 #ptopia-box-overlay2{

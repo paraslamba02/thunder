@@ -20,9 +20,9 @@ body {
 }
 
 @keyframes slidedown{
-	0% {transform: translate(-50%,0%)}
-	25% {transform: translate(-50%,-50%)}
-	100% {transform: translate(-50%,150%)}
+	0% {transform: translate(-25%,0%)}
+	25% {transform: translate(-25%,-50%)}
+	100% {transform: translate(-25%,150%)}
 }
 
 @keyframes contanim{
@@ -36,6 +36,20 @@ body {
 }
 
 @keyframes mainpage{
-	0% {transform: translate(0%,50%); opacity: 0}
-	100% {transform: translate(0%, 10%); opacity: 1}	
+	0% {transform: translate(0%,40%); opacity: 0}
+	100% {transform: translate(0%,0%); opacity: 1}	
+}
+
+.display{
+	display: block;
+	opacity: 1;
+}
+
+@keyframes fade{
+	0% {opacity: 0}
+	100%{opacity: 1}
+}
+
+@media only screen and (max-width: 800px){
+	
 }

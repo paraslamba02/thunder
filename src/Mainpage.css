@@ -8,6 +8,7 @@
 	transform: translate(0%,50%);
 	transition: 2s all ease-out;
 	/*display: none;*/
+	margin-top: 100px;
 }
 
 .head-main{

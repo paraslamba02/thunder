@@ -7,25 +7,32 @@ import Centertext1 from './Centertext1';
 import Versionbox from './Versionbox';
 import Header from './Header';
 import Sidemenu from './Sidemenu';
-import Mainpage from './Mainpage';
+// import Mainpage from './Mainpage';
+import Mainpagev2 from './Mainpagev2';
 import $ from 'jquery';
 
-ReactDOM.render(
-  <div>
-    <Background />
-    <div id='page1'>
-      <Logo />
-      <Centertext1 />
-      <Versionbox />
-    </div>
-    <div id='page2'>
-      <Header dollar="135,916"/>
-      <Sidemenu />
-      <Mainpage tvl="135,916,013" deposit="4.567" utopiapending="4.567" utopiapendingdollars="13.69"/>
-    </div>
-  </div>,
-  document.getElementById('root')
-);
+
+class Application extends React.Component{
+    render () {
+        return (
+            <div>
+              <Background />
+              <div id='page1'>
+                <Logo />
+                <Centertext1 />
+                <Versionbox />
+              </div>
+              <div id='page2'>
+                <Header dollar="135,916"/>
+                <Sidemenu />
+                <Mainpagev2 tvl="135,916,013" deposit="4.567" utopiapending="4.567" utopiapendingdollars="13.69"/>
+              </div>
+            </div>
+        )
+    }  
+}
+
+ReactDOM.render(<Application />,document.getElementById('root'));
 
 function lauchApp(){
   $("#bckimg").css({"animation": "sliding 1s ease-in-out forwards"});
@@ -51,7 +58,6 @@ $('#launch-btn').click(lauchApp);
 
 $(window).scroll(function() {    
     var s = $(window).scrollTop();
-    console.log(s);
 
     if (s >= 50){
       $('#container').addClass('scroll-nav');
@@ -59,3 +65,10 @@ $(window).scroll(function() {
       $('#container').removeClass('scroll-nav');
     }
 })
+
+// function close(){
+//   $('#ptopia-show1').css({'display':'none', 'opacity':'0', "animation": "fade 1s ease-in-out forwards"});
+//   $('#ptopia-box-overlay').css({'height':'110px'});
+// }
+
+// $('#ptopia-box-overlay').click(close);

@@ -6,8 +6,8 @@ import $ from 'jquery';
 
 const Ptopiabox = (props) => {
 	return(
-	<div className="ptopiabox" id={props.idbox}>
-		<div id="ptopia-box-overlay"></div>
+	<div className="ptopiabox" id={props.idbox} expanded='false' onClick={expand}>
+		<div class="ptopia-box-overlay"></div>
 		<div id="ptopia-box-overlay2"></div>
 		<div className="ptopiabox-initial" id={props.idi}>
 			<div className="colored-rect"  style={{background: props.bckcolor}}></div>
@@ -38,7 +38,7 @@ const Ptopiabox = (props) => {
 				</div>
 			<div id={props.btnid}><Buttons width="131px" height="41px" name={props.btnname} id='get-topia-btn'/></div>
 		</div>
-		<div className="ptopia-show" d={props.ids}>
+		<div className="ptopia-show" id={props.ids}>
 			<div id="ptopia-flex">
 				<div className="wallet">
 					<div className="wallet-line1">
@@ -106,6 +106,30 @@ const Ptopiabox = (props) => {
 		</div>
 	</div>
 	);
+}
+
+function expand(e){
+  var state = $(e.currentTarget).attr('expanded');
+  if(state == 'true'){
+    $(e.currentTarget).find('.ptopia-show').css({
+    	'opacity':'0',
+    	'max-height': '0px'
+    });
+    $(e.currentTarget).find('.ptopia-box-overlay').css({'height':'110px'});
+    $(e.currentTarget).attr('expanded','false');
+  }else {
+    $(e.currentTarget).find('.ptopia-show').css({
+    	'opacity':'1',
+    	'max-height': '400px'
+	});
+	setTimeout(function(){
+		$(e.currentTarget).find('.ptopia-show').css({
+	    	"animation": "fade 1s ease-in-out forwards"
+		});
+	},1000)
+    $(e.currentTarget).find('.ptopia-box-overlay').css({'height':'492px'});
+    $(e.currentTarget).attr('expanded','true');
+  }
 }
 
 export default Ptopiabox;
