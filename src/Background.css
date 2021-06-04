@@ -15,12 +15,12 @@
 	position: absolute;
 	transform: translate(0%, -50%);
 	transition: 1s all ease-in-out;
-	width: 100%;
+	width: 100vw;
 }
 
 #bckimg > img{
-	width: 100%;
-	height: auto;
+	/*width: 100%;*/
+	/*height: auto;*/
 }
 
 @keyframes sliding{
@@ -28,3 +28,4 @@
 	25% {transform: translate(0%, -60%)}
 	100% {transform: translate(0%, 0%)}
 }
+

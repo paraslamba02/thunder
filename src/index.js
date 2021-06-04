@@ -6,16 +6,20 @@ import Background from './Background';
 import Centertext1 from './Centertext1';
 import Versionbox from './Versionbox';
 import Header from './Header';
+import Headersmall from './Headersmall';
 import Sidemenu from './Sidemenu';
 // import Mainpage from './Mainpage';
 import Mainpagev2 from './Mainpagev2';
+import Vaultdetails from './Vaultdetails.js';
+import Accountdetails from './Account.js';
+import Yourswamp from './Yourswamp.js';
 import $ from 'jquery';
 
 
 class Application extends React.Component{
     render () {
         return (
-            <div>
+            <div id="web">
               <Background />
               <div id='page1'>
                 <Logo />
@@ -24,6 +28,7 @@ class Application extends React.Component{
               </div>
               <div id='page2'>
                 <Header dollar="135,916"/>
+                <Headersmall dollar="135,916"/>
                 <Sidemenu />
                 <Mainpagev2 tvl="135,916,013" deposit="4.567" utopiapending="4.567" utopiapendingdollars="13.69"/>
               </div>
@@ -59,16 +64,12 @@ $('#launch-btn').click(lauchApp);
 $(window).scroll(function() {    
     var s = $(window).scrollTop();
 
-    if (s >= 50){
+    if (s >= 30){
       $('#container').addClass('scroll-nav');
+      $('#container2').addClass('scroll-nav');
     }else{
       $('#container').removeClass('scroll-nav');
+      $('#container2').removeClass('scroll-nav');
     }
 })
 
-// function close(){
-//   $('#ptopia-show1').css({'display':'none', 'opacity':'0', "animation": "fade 1s ease-in-out forwards"});
-//   $('#ptopia-box-overlay').css({'height':'110px'});
-// }
-
-// $('#ptopia-box-overlay').click(close);

@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 const Logo = () => {
   const logostyle = {
     opacity: '0.34',
     fontSize: '13px',
-    marginTop: '2%',
+    marginTop: '20px',
     color: '#c1ffd5',
     position: 'absolute',
     left: '50%',

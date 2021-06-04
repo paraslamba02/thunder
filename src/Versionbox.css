@@ -1,13 +1,68 @@
 #versionbox{
 	position: relative;
-	width: 100%;
+	width: 75%;
 	top: 60%;
 	left: 50%;
-	transform: translate(-25%);
+	transform: translate(-33%);
 }
 
 #vh{
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 27px;
+	display: inline-block;
+}
+
+.lf{
+	background: transparent;
+	outline: none;
+	border: 2px solid rgba(117,240,157,0.1);
+}
+
+#left-right{
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+}
+
+#vh-parent{
+	width: 100%;
+	position: relative;
+}
+
+.lf>img{
+	padding: 5px 2px;
+}
+
+#lf-l{
+	border-radius: 5px 0px 0px 5px;
+}
+
+#lf-r{
+	border-radius: 0px 5px 5px 0px;
+	background: linear-gradient(to right, transparent, rgba(117,240,157,0.2));
+}
+
+@media only screen and (max-width: 800px){
+
+#versionbox{
+	left: 40%;
+}
+
+#left-right{
+	left: 72%;
+}
+
+#vbox2{
+	display: none;
+}
+
+}
+
+@media only screen and (max-width: 500px){
+
+#versionbox{
+	top: 50%;
+}
+
 }

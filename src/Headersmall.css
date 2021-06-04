@@ -1,0 +1,67 @@
+#container2{
+	position: fixed;
+	width: 90%;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+	right: 0%;
+	top: 0%;
+	padding: 0px 5%;
+	transform: translate(0%,0%);
+	/*opacity: 0;*/
+	z-index: 5;
+	display: none;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	height: 50px;
+}
+
+.scroll-nav{
+	background: #111B19;
+}
+
+#container2 > div{
+	display: inline-block;
+}
+
+#navtxt2{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,0%);
+	display: inline-block;
+	color: rgba(193, 255, 213, 0.5);
+	font-size: 16px;
+}
+
+#dollar2{
+	color: rgba(193, 255, 213, 1);
+	font-weight: 600;
+}
+
+#nav-img2:hover{
+	cursor: pointer;
+}
+
+#nav-center{
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+
+#nav-center > div{
+	display: inline-block;
+}
+
+#menu{
+	position: absolute;
+	top: 50%;
+	right: 0px;
+}
+
+#arrowfwd{
+	position: absolute;
+	top: 50%;
+	left: 0px;
+}
+
+#arrowfwd:hover{
+	cursor: pointer;
+}

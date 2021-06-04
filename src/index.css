@@ -6,6 +6,7 @@ body {
 	overflow-x: hidden;
 	/*overflow-y: hidden;*/
 	color: white;
+	min-width: 360px;
 }
 
 #page1{
@@ -20,14 +21,19 @@ body {
 }
 
 @keyframes slidedown{
-	0% {transform: translate(-25%,0%)}
-	25% {transform: translate(-25%,-50%)}
-	100% {transform: translate(-25%,150%)}
+	0% {transform: translate(-33%,0%)}
+	25% {transform: translate(-33%,-50%)}
+	100% {transform: translate(-33%,150%)}
 }
 
 @keyframes contanim{
 	0% {transform: translate(-100%,0%); opacity: 0}
 	100% {transform: translate(0%,0%); opacity: 1}
+}
+
+@keyframes contanim2{
+	0% {left: -270px}
+	100% {left:  0px}
 }
 
 @keyframes containeranim{
@@ -50,6 +56,17 @@ body {
 	100%{opacity: 1}
 }
 
-@media only screen and (max-width: 800px){
-	
+@media only screen and (max-width: 1260px){
+
+#container{
+	display: none;
 }
+
+#container2{
+	display: block!important;
+}
+
+
+
+}
+

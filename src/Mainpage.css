@@ -168,3 +168,74 @@
 	border: 1px solid rgba(117, 240, 196, 0.1);
 }
 
+@media only screen and (max-width: 1260px){
+
+#mainpage{
+	position: absolute;
+	margin: auto;
+	margin: 0px 5%;
+	width: 90%;
+	/*top: 42%;*/
+	opacity: 0;
+	transform: translate(0%,50%);
+	transition: 2s all ease-out;
+	/*display: none;*/
+	margin-top: 60px;
+}
+
+.head-main{
+	font-size: 24px;
+	color: white;
+	line-height: 40px;
+}
+
+.chat-icon{
+	padding: 49px 22px;
+}
+
+.audit{
+	height: 120px;
+}
+
+.audit-text{
+	font-size: 14px;
+}
+
+}
+
+@media only screen and (max-width: 840px){
+
+.deposit-box{
+	width: 100%;
+}
+
+.utopia-pending{
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+#deposit-info-box{
+	flex-wrap: wrap;
+}
+
+.head-amount{
+	font-size: 14px;
+}
+
+.head-main {
+    font-size: 16px;
+    line-height: 50px;
+}
+
+
+}
+
+@media only screen and (max-width: 500px){
+
+.audit-text{
+	font-size: 12px;
+	width: 65%;
+}
+
+}

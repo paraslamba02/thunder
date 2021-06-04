@@ -2,6 +2,8 @@ import React from 'react';
 import './Sidemenu.css';
 import arrowdown from "./images/arrowdown.png";
 import Search from "./images/Search.png";
+import p_icon from './images/Plutopia-Icon-1.png';
+import $ from 'jquery';
 
 const Sidemenu = () => {
     
@@ -35,6 +37,7 @@ const Sidemenu = () => {
   return (
   		<div id="cont">
       <div id="black-tint"></div>
+        <div id="crossbtn" onClick={hidesidemenu}>x</div>
   			<div id="logo-side">Logo</div>
   			<div id="inputs">
           <div id="toggle-side">
@@ -48,7 +51,10 @@ const Sidemenu = () => {
             <img src={Search} id="search-icon"></img>
           </form>
           {dd}
-          <div></div>
+          <div id="show-vault-tick">
+            <div id="tick-box"></div><div id="sv-text">Show my Vault</div>
+          </div>
+          <div id="side-menu-bottom"><span><img id="p_icon" src={p_icon}></img></span><span id="svtt">$135,196,015</span></div>
         </div>
   		</div>
   	);
@@ -67,6 +73,16 @@ const Dropdown = (props) => {
       <img src={arrowdown} id="arrow-icon"></img>
     </div>
   );
+}
+
+function hidesidemenu(){
+  $('#cont').css({"left": "-270px"});
+}
+
+function contheight(){
+  if($(window).height() < 750){
+    $('#cont').css({"position": "absolute"});
+  }
 }
 
 export default Sidemenu;

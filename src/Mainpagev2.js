@@ -7,65 +7,68 @@ import Plutopiaicon1 from './images/Plutopia-Icon-1.png';
 import Ptopiabox from './Ptopiabox.js';
 import group40 from './images/Group40.png';
 import group52 from './images/Group52.png';
+import Vaultdetails from './Vaultdetails.js';
+import Yourswamp from './Yourswamp.js';
 import $ from 'jquery';
 
 const Mainpagev2 = (props) => {
 
-	const pbarray = [
-    {
-	    bckcolor: "rgba(117, 240, 157, 1)",
-	    img: group40,
-	    name: "pTopia",
-	    factor: "50",
-		balance: "0",
-		deposited:"0",
-		yearly: "333.11",
-		daily: "0.91",
-		tvl: "10.63",
-		btnid:"get-topia-btn",
-		btnname:'Get Topia'
-    },
-    {
-	    bckcolor: "rgba(47, 255, 255, 1)",
-	    img: group52,
-	    name: "SWAMP / PNB LP",
-	    factor: "50",
-		balance: "99999",
-		deposited:"99999",
-		yearly: "333.11",
-		daily: "0.91",
-		tvl: "10.63",
-		btnid:"get-topia-btn",
-		btnname:'Harvest'
-    },
-    {
-	    bckcolor: "rgba(244, 123, 255, 1)",
-	    img: group52,
-	    name: "Topia",
-	    factor: "50",
-		balance: "0",
-		deposited:"0",
-		yearly: "333.11",
-		daily: "0.91",
-		tvl: "10.63",
-		btnid:"get-topia-btn",
-		btnname:"Harvest"
-    },
-    {
-	    bckcolor: "rgba(244, 123, 255, 0)",
-	    img: group52,
-	    name: "Topia",
-	    factor: "50",
-		balance: "0",
-		deposited:"0",
-		yearly: "333.11",
-		daily: "0.91",
-		tvl: "10.63",
-		btnid:"get-topia-btn",
-		btnname:"Harvest"
-    },
-  ]
+	// const pbarray = [
+ //    {
+	//     bckcolor: "rgba(117, 240, 157, 1)",
+	//     img: group40,
+	//     name: "pTopia",
+	//     factor: "50",
+	// 	balance: "0",
+	// 	deposited:"0",
+	// 	yearly: "333.11",
+	// 	daily: "0.91",
+	// 	tvl: "10.63",
+	// 	btnid:"get-topia-btn",
+	// 	btnname:'Get Topia'
+ //    },
+ //    {
+	//     bckcolor: "rgba(47, 255, 255, 1)",
+	//     img: group52,
+	//     name: "SWAMP / PNB LP",
+	//     factor: "50",
+	// 	balance: "99999",
+	// 	deposited:"99999",
+	// 	yearly: "333.11",
+	// 	daily: "0.91",
+	// 	tvl: "10.63",
+	// 	btnid:"get-topia-btn",
+	// 	btnname:'Harvest'
+ //    },
+ //    {
+	//     bckcolor: "rgba(244, 123, 255, 1)",
+	//     img: group52,
+	//     name: "Topia",
+	//     factor: "50",
+	// 	balance: "0",
+	// 	deposited:"0",
+	// 	yearly: "333.11",
+	// 	daily: "0.91",
+	// 	tvl: "10.63",
+	// 	btnid:"get-topia-btn",
+	// 	btnname:"Harvest"
+ //    },
+ //    {
+	//     bckcolor: "rgba(244, 123, 255, 0)",
+	//     img: group52,
+	//     name: "Topia",
+	//     factor: "50",
+	// 	balance: "0",
+	// 	deposited:"0",
+	// 	yearly: "333.11",
+	// 	daily: "0.91",
+	// 	tvl: "10.63",
+	// 	btnid:"get-topia-btn",
+	// 	btnname:"Harvest"
+ //    },
+ //  ]
 	return(
+		<>
 		<div id="mainpage">
 			<div className="head-main">Deposit & <span className="head-bold">Earn Money</span></div>
 			<div className="head-amount">TVL <span className="tvl-amount">${props.tvl}</span></div>
@@ -98,24 +101,26 @@ const Mainpagev2 = (props) => {
 					img={group40} name="pTopia" factor="50" balance="0"
 					deposited="0" yearly="333.11" daily="0.91"
 					tvl="10.63" btnid='get-topia-btn1' idi='ptopiabox-initial1' ids='ptopia-show1'
-  					btnname='Get Topia' />
-  			<Ptopiabox idbox='ptopiabox2' bckcolor="rgba(117, 240, 157, 1)" 
+  					btnname='Get Topia' imgclass="group40"/>
+  			<Ptopiabox idbox='ptopiabox2' bckcolor="rgba(47, 255, 255, 1)" 
 					img={group52} name="pTopia" factor="50" balance="0"
 					deposited="0" yearly="333.11" daily="0.91"
 					tvl="10.63" btnid='get-topia-btn2' idi='ptopiabox-initial2' ids='ptopia-show2'
-  					btnname='Get Topia' />
-  			<Ptopiabox idbox='ptopiabox3' bckcolor="rgba(117, 240, 157, 1)" 
+  					btnname='Get Topia' imgclass="group52"/>
+  			<Ptopiabox idbox='ptopiabox3' bckcolor="rgba(244, 123, 255, 1)" 
 					img={group52} name="pTopia" factor="50" balance="0"
 					deposited="0" yearly="333.11" daily="0.91"
 					tvl="10.63" btnid='get-topia-btn3' idi='ptopiabox-initial3' ids='ptopia-show3'
-  					btnname='Get Topia' />
-  			<Ptopiabox idbox='ptopiabox4' bckcolor="rgba(117, 240, 157, 1)" 
+  					btnname='Get Topia' imgclass="group52"/>
+  			<Ptopiabox idbox='ptopiabox4' bckcolor="rgba(244, 123, 255, 0)" 
 					img={group52} name="pTopia" factor="50" balance="0"
 					deposited="0" yearly="333.11" daily="0.91"
 					tvl="10.63" btnid='get-topia-btn4' idi='ptopiabox-initial4' ids='ptopia-show4'
-  					btnname='Get Topia' />
+  					btnname='Get Topia' imgclass="group52"/>
   					
 		</div>
+		<Vaultdetails />
+	</>	
 	);
 }
 

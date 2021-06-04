@@ -1,7 +1,9 @@
 import React from 'react';
 import './Header.css';
 import Buttons from './Buttons.js';
-import Ellipse5 from './images/Ellipse5.svg'
+import Ellipse5 from './images/Ellipse5.svg';
+import Accountdetails from './Account.js';
+import $ from 'jquery';
 
 const Header = (props) => {
   return (
@@ -18,10 +20,15 @@ const Header = (props) => {
         <div id="nav-right">
       		<Buttons id="navbtn" name="Buy Tron" width="140px" height="46px"/>
       		<div id="navtxt">pTopia <span id="dollar">${props.dollar}</span></div>
-      		<div id="nav-img"><img src={Ellipse5}></img></div>
+      		<div id="nav-img" onClick={showaccount}><img src={Ellipse5}></img></div>
         </div>
     	</div>
   );
 }
 
+function showaccount(){
+  $('#accountdetails').css({'display':"block"});
+}
+
 export default Header;
+

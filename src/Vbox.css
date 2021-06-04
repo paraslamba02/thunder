@@ -8,6 +8,16 @@
 	border-radius: 10px;
 }
 
+#vbox2{
+	display: inline-block;
+	height: 200px;
+	width: 440px;
+	margin: 20px 20px 20px 0px;
+	box-sizing: border-box;
+	background-color: rgba(8,15,14,0.69);
+	border-radius: 10px;
+}
+
 #vbox1-h{
 	font-weight: 500;
 	font-size: 18px;
@@ -21,4 +31,14 @@
 	font-weight: 300;
 	color: #C1FFD5;
 	margin: 0px 12px;
+}
+
+@media only screen and (max-width: 800px){
+	#vbox2{
+		display: none;
+	}
+
+	#vbox1{
+		width: 100%!important;
+	}
 }

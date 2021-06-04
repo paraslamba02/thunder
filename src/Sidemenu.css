@@ -6,8 +6,9 @@ p{
 	opacity: 1;
 	position: fixed;
 	width: 270px;
-	height: 100vh;
-	transform: translate(-100%,-100%);
+	min-height: 750px;
+	height: 100%;
+	transform: translate(-100%,0%);
 }
 
 #input-heads{
@@ -38,7 +39,7 @@ p{
 
 .side-btn{
 	padding: 10px 30px;
-	border-radius: 5px;
+	border-radius: 1px;
 	border: 1px solid rgba(117,240,157,0.6);
 }
 
@@ -105,4 +106,82 @@ p{
 
 .forms{
 	position: relative;
+}
+
+#show-vault-tick{
+	position: relative;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(193, 255, 213, 1);
+	line-height: 21px;
+}
+
+#show-vault-tick > div{
+	display: inline-block;
+}
+
+#tick-box{
+	height: 25px;
+	width: 25px;
+	border-radius: 5px;
+	border: 2px solid rgba(117,240,157,1);
+}
+
+#sv-text{
+	transform: translate(10%, -40%);
+}
+
+#side-menu-bottom{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	background-image: linear-gradient(90deg, rgba(117, 240, 157, 0.1) 0%, rgba(6, 9, 9, 0) 100%);
+}
+
+#p_icon{
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translate(0%,-50%);
+}
+
+#svtt{
+	position: absolute;
+	top: 50%;
+	transform: translate(60%, -50%);
+}
+
+#crossbtn{
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	right: 0;
+	padding: 10px 15px;
+	display: none;
+	z-index: 20;
+}
+
+#crossbtn:hover{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1260px){
+#cont{
+	left: -270px;
+	z-index: 20;
+	transition: 0.5s all ease-out;
+	position: absolute;
+}
+
+#black-tint{
+	z-index: -1;
+	background-color: rgba(0,0,0,1);
+}
+
+#crossbtn{
+	display: block;
+}
+
 }

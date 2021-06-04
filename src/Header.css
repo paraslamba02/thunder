@@ -76,3 +76,7 @@
 	color: rgba(193, 255, 213, 1);
 	font-weight: 600;
 }
+
+#nav-img:hover{
+	cursor: pointer;
+}
